@@ -1,35 +1,211 @@
 <!doctype html>
-
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Descubre Vengadores: Endgame, su historia, personajes y las razones por las que recomendamos esta película de Marvel."
+    />
+
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+
     <!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
   </head>
+
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <a class="skip-link" href="#contenido"> Saltar al contenido principal </a>
+
+    <!-- Cabecera y navegación -->
+    <header class="site-header">
+      <div class="site-header__container">
+        <a class="site-header__brand" href="#inicio"> ENDGAME </a>
+
+        <nav class="site-nav" aria-label="Navegación principal">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#sinopsis">Sinopsis</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#personajes">Personajes</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#recomendacion"> Mi opinión </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#trailer">Tráiler</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- Presentación -->
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__container">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Marvel Studios · 2019</p>
+
+            <h1 class="hero__title" id="hero-title">Vengadores: Endgame</h1>
+
+            <p class="hero__description">
+              Una última misión. Una historia inolvidable. El desenlace de una
+              de las sagas más importantes del universo cinematográfico de
+              Marvel.
+            </p>
+
+            <a class="button button--primary" href="#sinopsis">
+              Descubre la película
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ficha técnica -->
+      <section class="movie-info" aria-labelledby="movie-info-title">
+        <div class="movie-info__container">
+          <h2 class="section-title" id="movie-info-title">Ficha técnica</h2>
+
+          <dl class="movie-info__list">
+            <div class="movie-info__item">
+              <dt class="movie-info__term">Título original</dt>
+              <dd class="movie-info__value">Avengers: Endgame</dd>
+            </div>
+
+            <div class="movie-info__item">
+              <dt class="movie-info__term">Año</dt>
+              <dd class="movie-info__value">2019</dd>
+            </div>
+
+            <div class="movie-info__item">
+              <dt class="movie-info__term">Duración</dt>
+              <dd class="movie-info__value">181 minutos</dd>
+            </div>
+
+            <div class="movie-info__item">
+              <dt class="movie-info__term">Dirección</dt>
+              <dd class="movie-info__value">Anthony Russo y Joe Russo</dd>
+            </div>
+
+            <div class="movie-info__item">
+              <dt class="movie-info__term">Género</dt>
+              <dd class="movie-info__value">
+                Acción, ciencia ficción y aventuras
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Sinopsis -->
+      <section class="synopsis" id="sinopsis" aria-labelledby="synopsis-title">
+        <div class="synopsis__container">
+          <h2 class="section-title" id="synopsis-title">Sinopsis</h2>
+
+          <p class="synopsis__text">
+            Después de los devastadores acontecimientos de Vengadores: Infinity
+            War, los héroes supervivientes deben encontrar una manera de
+            afrontar las consecuencias de la derrota frente a Thanos.
+          </p>
+
+          <p class="synopsis__text">
+            Con el futuro del universo en juego, los Vengadores emprenden una
+            última misión en la que la amistad, el sacrificio y la esperanza
+            serán fundamentales.
+          </p>
+        </div>
+      </section>
+
+      <!-- Personajes principales -->
+      <section
+        class="characters"
+        id="personajes"
+        aria-labelledby="characters-title"
+      >
+        <div class="characters__container">
+          <h2 class="section-title" id="characters-title">
+            Personajes principales
+          </h2>
+
+          <div class="characters__grid">
+            <article class="character-card">
+              <h3 class="character-card__title">Iron Man</h3>
+              <p class="character-card__description">
+                Tony Stark, interpretado por Robert Downey Jr., es uno de los
+                protagonistas fundamentales de la historia.
+              </p>
+            </article>
+
+            <article class="character-card">
+              <h3 class="character-card__title">Capitán América</h3>
+              <p class="character-card__description">
+                Steve Rogers, interpretado por Chris Evans, representa el
+                liderazgo, la lealtad y el compromiso con sus compañeros.
+              </p>
+            </article>
+
+            <article class="character-card">
+              <h3 class="character-card__title">Thor</h3>
+              <p class="character-card__description">
+                El dios del trueno, interpretado por Chris Hemsworth, debe
+                afrontar las consecuencias de los acontecimientos anteriores.
+              </p>
+            </article>
+
+            <article class="character-card">
+              <h3 class="character-card__title">Viuda Negra</h3>
+              <p class="character-card__description">
+                Natasha Romanoff, interpretada por Scarlett Johansson, trabaja
+                para mantener unido al equipo.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recomendación personal -->
+      <section class="review" id="recomendacion" aria-labelledby="review-title">
+        <div class="review__container">
+          <h2 class="section-title" id="review-title">
+            ¿Por qué recomiendo esta película?
+          </h2>
+
+          <p class="review__text">
+            Vengadores: Endgame destaca por su capacidad para combinar acción,
+            emoción y desarrollo de personajes. Es una película especialmente
+            recomendable para quienes han seguido las historias anteriores del
+            universo cinematográfico de Marvel.
+          </p>
+
+          <p class="review__text">
+            Uno de sus mayores atractivos es la manera en que conecta historias
+            desarrolladas durante años, ofreciendo un desenlace memorable para
+            muchos de sus protagonistas.
+          </p>
+        </div>
+      </section>
+
+      <!-- Tráiler -->
+      <section class="trailer" id="trailer" aria-labelledby="trailer-title">
+        <div class="trailer__container">
+          <h2 class="section-title" id="trailer-title">Tráiler oficial</h2>
+
+          <p class="trailer__description">
+            Descubre un adelanto de esta aventura del universo cinematográfico
+            de Marvel.
+          </p>
+
+          <!-- Pendiente de incorporar el enlace oficial al tráiler -->
+        </div>
+      </section>
+    </main>
+
     <include src="./views/footer.html"></include>
+
     <script type="module" src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
   </body>
