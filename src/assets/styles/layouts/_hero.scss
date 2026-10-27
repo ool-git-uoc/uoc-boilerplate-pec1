@@ -1,0 +1,64 @@
+@use "../variables" as vars;
+@use "../functions" as fn;
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+  padding: fn.spacing(8) vars.$container-padding;
+  background: linear-gradient(
+    135deg,
+    vars.$color-background,
+    vars.$color-surface
+  );
+
+  &__container {
+    width: 100%;
+    max-width: vars.$container-max-width;
+    margin-inline: auto;
+  }
+
+  &__content {
+    max-width: 700px;
+  }
+
+  &__eyebrow {
+    margin-bottom: fn.spacing(2);
+    color: vars.$color-accent;
+    font-size: fn.rem(14);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 0 0 fn.spacing(3);
+    font-size: fn.rem(42);
+    line-height: 1.1;
+  }
+
+  &__description {
+    max-width: 600px;
+    margin-bottom: fn.spacing(4);
+    color: vars.$color-text-muted;
+    font-size: fn.rem(18);
+  }
+
+  @media (min-width: vars.$breakpoint-tablet) {
+    min-height: 70vh;
+
+    &__title {
+      font-size: fn.rem(64);
+    }
+
+    &__description {
+      font-size: fn.rem(20);
+    }
+  }
+
+  @media (min-width: vars.$breakpoint-desktop) {
+    &__title {
+      font-size: fn.rem(76);
+    }
+  }
+}

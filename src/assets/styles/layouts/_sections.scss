@@ -1,0 +1,70 @@
+@use "../variables" as vars;
+@use "../functions" as fn;
+
+.movie-info,
+.synopsis,
+.review,
+.trailer {
+  padding: fn.spacing(7) vars.$container-padding;
+
+  &__container {
+    max-width: vars.$container-max-width;
+    margin-inline: auto;
+  }
+
+  @media (min-width: vars.$breakpoint-tablet) {
+    padding-block: fn.spacing(10);
+  }
+}
+
+.movie-info {
+  background-color: vars.$color-surface;
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: fn.spacing(3);
+    margin: 0;
+  }
+
+  &__item {
+    padding-bottom: fn.spacing(2);
+    border-bottom: 1px solid vars.$color-text-muted;
+  }
+
+  &__term {
+    color: vars.$color-accent;
+    font-weight: 700;
+  }
+
+  &__value {
+    margin: 0;
+  }
+
+  @media (min-width: vars.$breakpoint-tablet) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.synopsis,
+.review {
+  &__text {
+    max-width: 800px;
+    color: vars.$color-text-muted;
+    font-size: fn.rem(17);
+  }
+}
+
+.review {
+  background-color: vars.$color-surface;
+}
+
+.trailer {
+  text-align: center;
+
+  &__description {
+    color: vars.$color-text-muted;
+  }
+}

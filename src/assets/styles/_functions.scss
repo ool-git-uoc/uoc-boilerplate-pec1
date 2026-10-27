@@ -1,0 +1,13 @@
+@use "sass:math";
+
+// Convierte píxeles a rem.
+// Ejemplo: rem(24) devuelve 1.5rem.
+@function rem($pixels, $base: 16) {
+  @return math.div($pixels, $base) * 1rem;
+}
+
+// Calcula un espaciado a partir de una unidad base.
+// Ejemplo: spacing(3) devuelve 1.5rem.
+@function spacing($factor, $unit: 0.5rem) {
+  @return $factor * $unit;
+}

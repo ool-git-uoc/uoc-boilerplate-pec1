@@ -1,0 +1,60 @@
+@use "../variables" as vars;
+@use "../functions" as fn;
+
+.site-header {
+  padding: fn.spacing(2) vars.$container-padding;
+  background-color: vars.$color-surface;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: fn.spacing(2);
+    max-width: vars.$container-max-width;
+    margin-inline: auto;
+  }
+
+  &__brand {
+    color: vars.$color-accent;
+    font-size: fn.rem(24);
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+  }
+
+  @media (min-width: vars.$breakpoint-tablet) {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.site-nav {
+  width: 100%;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: fn.spacing(2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: fn.spacing(1);
+    font-size: fn.rem(14);
+    text-decoration: none;
+
+    &:hover {
+      color: vars.$color-accent;
+    }
+  }
+
+  @media (min-width: vars.$breakpoint-tablet) {
+    width: auto;
+  }
+}
