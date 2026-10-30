@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-recess-order"
+  ],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "selector-class-pattern": [
+      "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*(?:(?:__[a-z][a-z0-9]*(?:-[a-z0-9]+)*)|(?:--[a-z][a-z0-9]*(?:-[a-z0-9]+)*))?$",
+      {
+        "message": "Las clases deben seguir la nomenclatura BEM: bloque, bloque__elemento o bloque--modificador."
+      }
+    ],
+    "scss/dollar-variable-pattern": [
+      "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+      {
+        "message": "Las variables Sass deben utilizar kebab-case."
+      }
+    ],
+    "scss/at-rule-no-unknown": true,
+    "scss/selector-no-redundant-nesting-selector": true
+  }
+}
