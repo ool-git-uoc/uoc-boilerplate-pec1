@@ -24,11 +24,11 @@
 
   &__eyebrow {
     margin-bottom: fn.spacing(2);
-    color: vars.$color-accent;
     font-size: fn.rem(14);
     font-weight: 700;
-    letter-spacing: 0.1em;
+    color: vars.$color-accent;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 
   &__title {
@@ -40,8 +40,8 @@
   &__description {
     max-width: 600px;
     margin-bottom: fn.spacing(4);
-    color: vars.$color-text-muted;
     font-size: fn.rem(18);
+    color: vars.$color-text-muted;
   }
 
   @media (min-width: vars.$breakpoint-tablet) {

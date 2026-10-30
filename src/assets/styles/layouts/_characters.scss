@@ -30,19 +30,19 @@
 
 .character-card {
   padding: fn.spacing(3);
+  background-color: vars.$color-surface;
   border: 1px solid vars.$color-accent;
   border-radius: vars.$border-radius;
-  background-color: vars.$color-surface;
 
   &__title {
     margin-top: 0;
-    color: vars.$color-accent;
     font-size: fn.rem(22);
+    color: vars.$color-accent;
   }
 
   &__description {
     margin-bottom: 0;
-    color: vars.$color-text-muted;
     font-size: fn.rem(15);
+    color: vars.$color-text-muted;
   }
 }
