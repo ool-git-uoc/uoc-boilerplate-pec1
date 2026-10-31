@@ -85,5 +85,9 @@ input {
 
   .button {
     transition: none;
+
+    &__icon {
+      margin-right: fn.spacing(1);
+    }
   }
 }
