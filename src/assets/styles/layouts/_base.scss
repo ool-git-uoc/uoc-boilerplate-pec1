@@ -73,6 +73,15 @@ input {
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
 :focus-visible {
   outline: 3px solid vars.$color-accent;
   outline-offset: 3px;
